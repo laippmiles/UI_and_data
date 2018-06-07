@@ -2,10 +2,10 @@ import datetime
 
 from pandas import read_csv
 
-from data_SL.save_data import save_data
 
 #读取新数据的格式
-data = read_csv('D:\桌面\PyUI\water_treatment_data.csv')
+filePath = r'D:\桌面\UI&Data' + '\\' + 'water_treatment_data.csv'
+data = read_csv(filePath)
 #print(data)
 feature = list(data.columns.values)
 #提取特征名
@@ -19,6 +19,7 @@ print(list(feature))
 date = [datetime.datetime.now().year,datetime.datetime.now().month,datetime.datetime.now().day]
 outputdata =data.values[2:20,:]
 from save_as import save_as
+#from save_data import save_data
 #save_data(outputdata)
 file_name = input('file_name:')
 save_as(outputdata,file_name)

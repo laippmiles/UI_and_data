@@ -36,7 +36,9 @@ def array2CSV_Once(array ,indexName, path = 'D:\桌面\ELM'+'\\',filename = 'tes
         fout.write(lines)
 
 #测试
+'''
 from loadData import loadData
 from numpy import mat
 train = loadData()[0].A
 array2CSV_Once(train,[])
+'''

@@ -2,7 +2,7 @@ def queue_data(file_name ='123'):
     from pandas import read_csv
     from numpy import shape
     #读取新数据的格式
-    filePath = r'D:\桌面\PyUI' + '\\' +file_name + '.csv'
+    filePath = r'D:\桌面\UI&Data' + '\\' +file_name + '.csv'
     data = read_csv(filePath)
     data_without_feature = data.values
     #print(data_without_feature)
